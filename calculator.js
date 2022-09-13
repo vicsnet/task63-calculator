@@ -1,3 +1,5 @@
+const dis = document.getElementById("display2");
+
 let display = document.getElementById("display");
 
 let buttons = Array.from(document.getElementsByClassName("button"));
@@ -10,23 +12,28 @@ buttons.map((button) => {
     // console.log(e.target)
     // console.log(e.target.textContent)
     switch (e.target.innerText) {
-      // case 'C':
-      //     display.innerText = " "
-      //     break
+      case "C":
+        display.innerText = " ";
+        dis.innerText = "";
+        break;
       case "←":
-        display.innerText = display.innerText.slice(0, -1);
+        dis.innerText = dis.innerText.slice(0, -1);
         break;
       case "=":
         try {
-          display.innerText = eval(display.innerText);
+          display.innerText = eval(dis.innerText);
+
+          // dis.innerText = display.innerText
         } catch {
           display.innerText = "Error";
         }
 
         break;
-
+      
+        break;
       default:
-        display.innerText += e.target.innerText;
+        // display.innerText == e.target.innerText;
+        dis.innerText += e.target.innerText;
     }
   });
 });
