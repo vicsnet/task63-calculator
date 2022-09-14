@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container calculator">
         <div class="d">
 
             <div id="display2">
@@ -20,27 +20,27 @@
     
             </div>
         </div>
-        <div class="buttons">
-            <div class="button">C</div>
-            <div data- class="button">/</div>
-            <div class="button">*</div>
+        <div class="buttons calculator__keys">
+            <div class="button" data-action="clear">C</div>
+            <div data- class="button key--operator" data-action="divide">/</div>
+            <div class="button key--operator" data-action="multiply" >*</div>
             <div class="button">&larr;</div>
             <div class="button">7</div>
             <div class="button">8</div>
-            <div class="button">9</div>
-            <div class="button">-</div>
+            <div class="button ">9</div>
+            <div class="button key--operator" data-action="subtract">-</div>
             <div class="button">4</div>
             <div class="button">5</div>
             <div class="button">6</div>
             <div class="button">1</div>
             <div class="button">2</div>
             <div class="button">3</div>
-            <div class="button">.</div>
+            <div class="button " data-action="decimal">.</div>
             <div class="button">(</div>
             <div class="button">0</div>
             <div class="button">)</div>
-            <div id="equal" class="button">=</div>
-            <div class="button">+</div>
+            <div id="equal" class="button key--equal" data-action="calculate">=</div>
+            <div class="button key--operator"  data-action="add">+</div>
         </div>
     </div>
     <script src="calculator.js"></script>
