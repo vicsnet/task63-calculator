@@ -27,13 +27,28 @@ buttons.map((button) => {
         } catch {
           display.innerText = "Error";
         }
+       
+        if (display != "") {
+          // e.target.innerText = display.innerText;
+          // e.click = e.target.innerText;
+          // click = dis.innerText
+          // e.target.innerText = display.innerText;
+          // this.dis.innerText = display.innerText;
+          dis.innerText = display.innerText
+          // display.innerText = ''
+          // dis.innerText = display
+          console.log(display.innerText);
+        }
 
         break;
-      
-        break;
+      // case (dis.innerText != '') :
+      //           dis.innerText = display.innerText;
+
       default:
         // display.innerText == e.target.innerText;
+
         dis.innerText += e.target.innerText;
     }
   });
+ 
 });
