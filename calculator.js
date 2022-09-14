@@ -29,7 +29,7 @@ buttons.map((button) => {
         }
        
         if (display != "") {
-          // e.target.innerText = display.innerText;
+          
           // e.click = e.target.innerText;
           // click = dis.innerText
           // e.target.innerText = display.innerText;
